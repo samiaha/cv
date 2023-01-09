@@ -1,0 +1,269 @@
+%% \makeatletter
+%% \let\oldfilec@ntents\filec@ntents
+%% \gdef\filec@ntents{\filec@ntents@overwrite\oldfilec@ntents}
+%% \makeatother
+%% \RequirePackage{filecontents}
+%% \begin{filecontents}(moderncvcolorburgundy.sty)
+%% %% \begin{filecontents}[overwrite](moderncvcolorburgundy.sty)
+%% %% \begin{filecontents*}{moderncvcolorburgundy.sty}
+
+%% %% \usepackage{hyperref}
+%% \usepackage{enumitem}
+
+%% \NeedsTeXFormat{LaTeX2e}
+%% \ProvidesPackage{moderncvcolorburgundy}[2013/02/09 v1.3.0 modern curriculum vitae and letter color scheme: burgundy]
+
+%% \definecolor{color0}{rgb}{0,0,0}% black
+%% %\definecolor{color1}{rgb}{0.5647,0.3647,0.5882}% burgundy
+%% %\definecolor{color1}{rgb}{0.4509804,0.27450982,0.5294118}% burgundy
+%% \definecolor{color1}{rgb}{0.49,0.29,0.57}% burgundy
+%% \definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+%% \endinput
+
+
+
+%% \end{filecontents}
+%% \end{filecontents*}
+
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{burgundy}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Samia}{Hamed}
+% \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+% \address{2277 Williams Ave}{Palo Alto CA 94306}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(214)~606~1334}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{samia.hamed@gmail.com}                               % optional, remove / comment the line if not wanted
+%% \homepage{elephantlaboratories.com}                         % optional, remove / comment the line if not wanted
+%%\social[github]{prismofeverything}                              % optional, remove / comment the line if not wanted
+\social[linkedin]{Samia Hamed}                        % optional, remove / comment the line if not wanted
+%% \social[twitter]{ryanspangler}                             % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%% \quote{Assembling the Biology of the Future}
+
+\definecolor{seagreen}{HTML}{23B886}% seagreen
+\definecolor{joy}{HTML}{6BB32B}
+\definecolor{level}{HTML}{5Ba31B}
+%% \definecolor{joy}{HTML}{5C942B}
+%% \definecolor{joy}{HTML}{95D45D}
+\AfterPreamble{\hypersetup{
+  pdfauthor={Samia Hamed},
+  pdftitle={CV for Samia Hamed},
+  pdfsubject={CV for Samia Hamed},
+  colorlinks=true,
+  urlcolor=level,
+  %% urlcolor=seagreen,
+}}
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Introduction}
+{I am a PhD chemist skilled at process engineering and technology development, scientific research and communication. I have written patents and papers, driven forklifts and operated bandsaws, explored approximations to quantum chemical equations, and stood at the front of high school and university classrooms. I am drawn to opportunities at intersections of engineering and research, of mission and integrity, of focus and play - where the potential of ideas can become reality.}
+
+\section{Experience}
+
+\cventry{2020--present}{Senior Process Engineer}{Intel Corporation}{Santa Clara CA}{}{Engineer in technology development group and layer owner of Intel's next-generation EUV photomasks, initiating and participating in task forces and working groups to solve urgent problems, integrate complex projects, and ensure on-going progress. \textbf{Key achievements}:
+\begin{itemize}
+\item Wrote and implemented 12 whitepapers documenting process changes improving efficiency and quality.   
+\item Led several CIPs involving critical dimension targeting and process yield, excursion investigations, and tool qualification data analysis.
+\item Member of mask planning committee working group responsible for driving decision-making and presenting technical ideas to leadership. 
+\item In one year became lead trainer and mentor for new EUV integration team members; trained three new engineers in the last year. 
+\end{itemize}}
+
+\cventry{2012--2020}{Physical Chemistry PhD Student Researcher and Instructor}{UC Berkeley and LBNL - Neaton Group}{Berkeley CA}{}{Conducted research on the excited states of molecules with density functional and many body pertrubation theories. Taught general chemistry labs and led quantum mechanics discussion sections, grading assignments and exams. \textbf{Key achievements}:
+\begin{itemize}
+\item Published 8 papers with over 800 citations. 
+\item Graduate Student Leader of the Kavli Energy Nanoscience Institute in 2015 and 2016.
+\item Coauthored successful ERCAP grant request to NERSC in 2016 for 10 million hours of computational time for the Neaton group's work on the theory of nanostructured materials.   
+\item Member of College of Chemistry Committee on Faculty-Graduate Student Mentoring and coauther of survey and report to improve mentorship outcomes. 
+\item Participant at DFT and Beyond workshop at ICTP in Trieste in 2013. Gave talks at APS in 2014, 2015, and 2017. Presented posters at TACC in 2016 and ACS in 2017. 
+\end{itemize}}
+
+\cventry{2009--2012}{High School Chemistry Teacher}{Navarro Early College High School}{Austin TX}{}{Taught general chemistry and integrated chemistry and physics to 150 students each year, providing free tutoring before and after school each day. Created labs and developed curriculum on a team for the entire grade. \textbf{Key Achievements}:
+\begin{itemize}
+\item Member of the campus advisory committee, 2011 and 2012. 
+\item Siemens Teacher as Researcher, June 2011
+\item Forging Climate Connections participant, Nov 2010.
+\item Founder and faculty sponser of the outdoors and environmental club, 2010 and 2011. 
+\end{itemize}}
+
+\cventry{2006--2009}{R\&D Engineer}{DIAB Group}{Desoto TX}{}{Worked on global and local projects to improve the processability and characteristics of core materials for sandwich composite technolgies while maintaining the security of the raw material supply by qualifying alternate suppliers and provided chemistry expertise to plant engineers. \textbf{Key Achievements}:
+\begin{itemize}
+\item Developed 2 patents in collaboration with scientists at factories in Italy, Sweden and Texas, traveling to Europe 8 times in two years to run full-scale production trials and work in pilot labs.
+\end{itemize}}
+
+%% \item Migrated the flat document data model into a graph database oriented around the relationships between semantic terms and networks of people.
+%% \item Took a naive analysis algorithm and parallelized it to work over any sized cluster of independent workers.%%   \begin{itemize}
+%%   \item Lead an interdisciplinary team in developing a large open source project
+%%   \item Managed an open source community by constructively listening to feedback and reviewing and merging pull requests
+%% %  \item Constantly evaluating and simplifying the code base while making it more flexible and useful to everyone
+%% %  \item Modularized the code base by extracting useful features into stand alone libraries
+%%   \item Mediated and communicated effectively between technical and non-technical individuals
+%%   \end{itemize}
+%% \item Created Cyclops --- interpolating data for programmatic animations:
+%% \url{http://weareinstrument.com/cyclops}
+  %% \begin{itemize}
+  %% \item Applied a variety of mathematical methods to a practical problem
+  %% \item Solved an industry wide problem in a creative and useful way
+  %% %% \item Built a general tool for interpolation and animation
+  %% \end{itemize}
+%%   \begin{itemize}
+%% %  \item Guiding the learning of developers of many skill levels in a way that is effective for everyone;
+%%   \item Innovated new processes for learning and software engineering for developers from a spectrum of skill levels
+%%   \item Focused activities to produce libraries and practical applications that find use beyond the workshop
+%%   \end{itemize}
+
+\section{Education}
+\cventry{2005}{Bachelor of Science in Chemistry}{University of Texas at Austin}{Austin TX}{}{Dean's Scholar and National Merit Scholar}
+\cventry{2020}{Doctor of Philosophy in Chemistry}{University of California at Berkeley}{Berkeley CA}{}{Physical Chemistry, Neaton Group}
+
+\section{Publications}
+\begin{enumerate}%%[leftmargin=*, noitemsep]
+\item Skalnik, C.J., Agmon, E., \textbf{Spangler, R.K.}, Talman, L., Morrison, J.H., Peirce, S.M., and Covert, M.W. (in review). \href{https://www.biorxiv.org/content/10.1101/2021.04.27.441666v1}{Whole-Colony Modeling of \textit{Escherichia coli}.} \textit{bioRxiv}.
+\item Shaikh, B., Smith, L. P., Vasilescu, D., Marupilla, G., Wilson, M., Agmon, E., \textbf{Spangler, R.K.}, [...] and Karr, J. R. (2022). \href{https://doi.org/10.1093/nar/gkac331}{BioSimulators: a central registry of simulation engines and services for recommending specific tools.} \textit{Nucleic Acids Research}: https://doi.org/10.1093/nar/gkac331
+\item Agmon, E., \textbf{Spangler, R.K.}, Skalnik, C.J., Poole, W., Morrison, J.H., Peirce, S.M., and Covert, M.W. (2022). \href{https://academic.oup.com/bioinformatics/advance-article-abstract/doi/10.1093/bioinformatics/btac049/6522109}{Vivarium: an interface and engine for integrative multi-scale modeling in computational biology.} \textit{Bioinformatics}, 38(7), 1972-1979.
+\item Allison Creason, David Haan, Kristen Dang, Kami E. Chiotti, Matthew Inkman, Andrew Lamb, Thomas Yu, Yin Hu, Thea C. Norman, Alex Buchanan, Marijke J. van Baren, \textbf{Ryan Spangler}, [...] and Kyle Ellrott (2021). \href{https://www.sciencedirect.com/science/article/pii/S2405471221002076}{A community challenge to evaluate RNA-seq, fusion detection, and isoform quantification methods for cancer discovery.} \textit{Cell Systems}, Volume 12, Issue 8, 827-838.e5. 
+\item Agmon, E., and \textbf{Spangler, R.K.} (2020). \href{https://www.mdpi.com/1099-4300/22/10/1101}{A multi-scale approach to modeling \textit{E. coli} chemotaxis.} \textit{Entropy}, 22: 1101.
+\item Macklin, D.N., Ruggero, N.A., Carrera, J., Choi, H., Horst, T.A., Mason, J.C., Sun, G., Agmon, E., DeFelice, M.M., Maayan, I., Lane, K., \textbf{Spangler, R.K.}, Gillies, T.E., Paull, M.L., Akhter, S., Bray, S.R., Weaver, D.S., Keseler, I.M., Karp, P.D., Morrison, J.H., and Covert, M.W. (2020). \href{https://science.sciencemag.org/content/369/6502/eaav3751.abstract}{Simultaneous cross-evaluation of heterogeneous \textit{E. coli} datasets via mechanistic simulation.} \textit{Science}, 369, eaav3751.
+\item Adam Struck, Brian Walsh, Alexander Buchanan, Jordan A. Lee, \textbf{Ryan Spangler}, Joshua M. Stuart, and Kyle Ellrott (2020). \href{https://ascopubs.org/doi/full/10.1200/CCI.19.00110}{Exploring Integrative Analysis Using the BioMedical Evidence Graph.} \textit{JCO Clinical Cancer Informatics}, :4, 147-159.
+\end{enumerate}
+
+\section{Patents}
+\begin{enumerate}%%[leftmargin=*, noitemsep]
+\item 2011 U.S. Patent US8492446B2 Leone Lauri, Eva-Lotta Magdalena Petersson, Raffaela Bressan, \textbf{Samia Mariam Hamed} {Enhanced process for the production of expanded PVC and plastic materials based on expanded PVC obtained therewith}
+\item 2011 U.S. Patent US88956342B2 Leone Lauri, Eva-Lotta Magdalena Petersson, Raffaela Bressan, \textbf{Samia Mariam Hamed} {Process for the production of expanded plastic materials, in particular PVC-based polymeric foams and a formulation of a polymeric blend for effecting said process}
+\end{enumerate}
+
+\section{Technology}
+\cvitem{Languages}{Python, Bash, SQL}
+\cvitem{Tools}{QChem, Gaussian, molgw, CalibreMDP, Unix, Emacs}
+\cvitem{Areas}{electronic structure theory, DFT and MBPT, MPC modeling, process engineering and technology development, data analysis and statistics}
+%% \cvitem{Skills}{Asynchronous Computation, Websockets, Unix/linux Server Administration, Distributed Version Control}
+
+%% \section{Relevant Activities}
+%% \cvitem{2013-2014}{Portland Clojure User Group - Member of a local community meetup for discussing and sharing Clojure knowledge}
+%% \cvitem{2013}{EuroClojure - Attended international conference in Berlin for all things Clojure}
+%% \cvitem{2012}{Systems Science Seminar at PSU - Gave talk on the Nature of Assumptions}
+%% \cvitem{2011}{OSCON - Attended convention for open source software in Portland OR}
+%% \cvitem{2011}{Codex - Co-lead community workshop on creative coding and programming art}
+%%\cvitem{Go}{The ancient game of life and death.  I have learned many things about life from Go.}
+%% \cvitem{Naming}{Word Creation:  Words have to come from somewhere.  How about the Omnivoplax?} %nothingness?}
+%% \cvitem{Cognition}{Awareness examining itself:  Appreciating and unraveling the mystery of the nature of existence.}
+
+%% \section{References}
+%% \begin{cvcolumns}
+  %% \cvcolumn{Name}{\begin{itemize}\item Markus Covert\item[] \emph{Stanford Bioengineering}\item Jerry Morrison\item[] \emph{Allen Center}\end{itemize}}
+  %% \cvcolumn{Contact}{\begin{itemize}\item[] (650) 725-6615 \item[] mcovert@stanford.edu\item[] (650) 488-3541\item[] jerry.morrison@gmail.com\end{itemize}}
+
+  %% \cvcolumn{Area}{\begin{itemize}\item Creative Designer\item Person 2\end{itemize}(more upon request)}
+  %% \cvcolumn[0.5]{Contact}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%% \end{cvcolumns}
+
+%% \section{Master thesis}
+%% \cvitem{title}{\emph{Title}}
+%% \cvitem{supervisors}{Supervisors}
+%% \cvitem{description}{Short thesis abstract}
+
+%% \section{Languages}
+%% \cvitemwithcomment{Language 1}{Skill level}{Comment}
+%% \cvitemwithcomment{Language 2}{Skill level}{Comment}
+%% \cvitemwithcomment{Language 3}{Skill level}{Comment}
+
+%% \section{Computer skills}
+%% \cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+%% \cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%% \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+%% \section{Extra 1}
+%% \cvlistitem{Item 1}
+%% \cvlistitem{Item 2}
+%% \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+%% \section{Extra 2}
+%% \cvlistdoubleitem{Item 1}{Item 4}
+%% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%% \nocite{*}
+%% \bibliographystyle{plain}
+%% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+
+
+%% \recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%% \date{January 01, 1984}
+%% \opening{Dear Sir or Madam,}
+%% \closing{Yours faithfully,}
+%% \enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%% \makelettertitle
+
+%% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+%% Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+%% Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+%% Albert Einstein discovered that $e=mc^2$ in 1905.
+
+%% \[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+%% \makeletterclosing
+
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
